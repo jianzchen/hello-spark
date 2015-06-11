@@ -23,6 +23,8 @@ object SparkDedup {
      val shuffle = input.map(line => (line.split(",",2)(0), line))
      val output = shuffle.reduceByKey((a, b) => a)/*.saveAsTextFile(args(1)+"/output.dat")*/
 
+
+     output.foreach(x => println(x._1))
      output.foreach(x => println(x._2))
 /*     val out = new java.io.FileWriter(args(1)+"/output.dat")
      out.write(output)
