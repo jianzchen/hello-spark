@@ -23,7 +23,7 @@ object SparkJoin {
 
     val output = sc.makeRDD(1 to 5).map(x => (x,null)) leftOuterJoin file1.map(x => (x.split(",")(0).toInt,x)).reduceByKey((a,b) => a) leftOuterJoin
       file2.map(x => (x.split(",")(0).toInt,x)) leftOuterJoin file3.map(x => (x.split(",")(0).toInt,x))
-    
+
     output.collect.foreach(x => println("[PK] " + x._1 + " [VALUE] " + x._2._2.getOrElse("NA")))
 
     sc.stop()

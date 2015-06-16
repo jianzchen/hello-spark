@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c891820f-92a9-4d0d-8a27-f67de75644fc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/testCaseClass.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/testWordCount.scala" />
+      <change type="DELETED" beforePath="C:\Users\jianzchen\IdeaProjects\hello-spark\target\test-classes\testScala$.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\jianzchen\IdeaProjects\hello-spark\target\test-classes\testScala.class" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\jianzchen\IdeaProjects\hello-spark\src\test\scala\testScala.scala" afterPath="$PROJECT_DIR$/src/test/scala/testDate.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/SparkJoin$$anonfun$main$1$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/target/classes/SparkJoin$$anonfun$main$1$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/SparkJoin$$anonfun$main$1.class" afterPath="$PROJECT_DIR$/target/classes/SparkJoin$$anonfun$main$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/SparkJoin$.class" afterPath="$PROJECT_DIR$/target/classes/SparkJoin$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/SparkJoin.scala" afterPath="$PROJECT_DIR$/src/main/scala/SparkJoin.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,16 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hello-spark.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello-spark.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SparkWordCount.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/SparkWordCount.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,21 +88,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SparkJoin.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SparkJoin.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/SparkJoin.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8352668">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testScala.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/testScala.scala">
+      <file leaf-file-name="testDate.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/testDate.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testCaseClass.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/testCaseClass.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testWordCount.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/testWordCount.scala">
+          <provider selected="true" editor-type-id="text-editor">
               <folding />
             </state>
           </provider>
@@ -133,6 +149,9 @@
         <option value="$PROJECT_DIR$/src/test/scala/testScala.scala" />
         <option value="$PROJECT_DIR$/data/in/test2.csv" />
         <option value="$PROJECT_DIR$/src/main/scala/SparkJoin.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/testDate.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/testCaseClass.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/testWordCount.scala" />
       </list>
     </option>
   </component>
@@ -220,10 +239,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="height" value="1216" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -419,7 +438,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SparkJoin">
+  <component name="RunManager" selected="Application.testWordCount">
     <configuration default="false" name="SparkPi" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -444,7 +463,7 @@
     </configuration>
     <configuration default="false" name="testScala" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="testScala" />
+      <option name="MAIN_CLASS_NAME" value="testDate" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -460,6 +479,36 @@
     <configuration default="false" name="SparkJoin" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="SparkJoin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hello-spark" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="testCaseClass" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="testCaseClass" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hello-spark" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="testWordCount" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="testWordCount" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -839,18 +888,22 @@
       <envs />
       <method />
     </configuration>
-    <list size="5">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.SparkWordCount" />
       <item index="1" class="java.lang.String" itemvalue="Application.SparkDedup" />
       <item index="2" class="java.lang.String" itemvalue="Application.SparkPi" />
       <item index="3" class="java.lang.String" itemvalue="Application.testScala" />
       <item index="4" class="java.lang.String" itemvalue="Application.SparkJoin" />
+      <item index="5" class="java.lang.String" itemvalue="Application.testCaseClass" />
+      <item index="6" class="java.lang.String" itemvalue="Application.testWordCount" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.SparkJoin" />
-        <item index="1" class="java.lang.String" itemvalue="Application.testScala" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SparkPi" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.testWordCount" />
+        <item index="1" class="java.lang.String" itemvalue="Application.testCaseClass" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SparkJoin" />
+        <item index="3" class="java.lang.String" itemvalue="Application.testScala" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SparkPi" />
       </list>
     </recent_temporary>
   </component>
@@ -882,15 +935,13 @@
       <workItem from="1433300758199" duration="22000" />
       <workItem from="1433404507452" duration="2908000" />
       <workItem from="1433498836361" duration="13488000" />
-      <workItem from="1434338486911" duration="2198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42688000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1216" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -903,7 +954,6 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23560767" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.56076556" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17270789" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -950,33 +1000,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/SparkPi.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/SparkDedup.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -993,7 +1016,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/testScala.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/testDate.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
@@ -1314,14 +1337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/testScala.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/SparkPi.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1365,8 +1380,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/SparkJoin.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8352668">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/testDate.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/testCaseClass.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/scala/scala-2.11.6/lib/scala-library.jar!/scala/collection/TraversableOnce.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3536036">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/testWordCount.scala">
+      <provider selected="true" editor-type-id="text-editor">
           <folding />
         </state>
       </provider>

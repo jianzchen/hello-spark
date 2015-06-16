@@ -3,7 +3,7 @@ import java.util.Date
 /**
  * Created by jianzchen on 2015/6/8.
  */
-object testScala {
+object testDate {
 /*    def main (args: Array[String]) {
       myFunc(() => println(new java.util.Date))
   }
