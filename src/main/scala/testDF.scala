@@ -1,6 +1,6 @@
 import org.apache.spark.rdd.RDD
-import org.apache.spark.sql.{Row, SQLContext}
 import org.apache.spark.sql.types.{StringType, StructField, StructType}
+import org.apache.spark.sql.{Row, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
 /**
@@ -35,7 +35,6 @@ object testDF {
     val results = sqlContext.sql("select id from testTable")
 
     println(results.distinct.count)
-
     sc.stop
   }
 }
