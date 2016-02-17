@@ -18,7 +18,7 @@ spark-submit \
     --queue root.default \
     --class testDF \
     ~/cjz/lib/hello-spark-1.0-SNAPSHOT-jar-with-dependencies.jar \
-    /user/mis/cjz/input/*.csv /user/mis/cjz/output
+    /user/mis/cjz/input/ /user/mis/cjz/output
     
 create external table hdw.cjz_spark_test 
 (

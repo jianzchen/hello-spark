@@ -18,7 +18,7 @@ object testDF {
     val sqlContext = new SQLContext(sc)
 
     //val input:JavaRDD[Row] = sc.textFile("data/in/test1.csv").map[Row](x => Row(x.split(",")))
-    val input: RDD[Row] = sc.textFile(args(0)).map(_.split(",")).map(x => Row(x(0), x(1), x(2)))
+    val input: RDD[Row] = sc.textFile(args(0) + "/*").map(_.split(",")).map(x => Row(x(0), x(1), x(2)))
     println(input.count())
     println(input.collect().apply(1).get(1))
     //val columns = List[String]("id","name","desc").asJava
@@ -26,9 +26,16 @@ object testDF {
     val schema = StructType("id name desc".split(" ").map(fieldName => StructField(fieldName, StringType, true)))
     val df = sqlContext.createDataFrame(input, schema)
 
-    //df.saveAsParquetFile("data/out/result.parquet")
-    //df.rdd.saveAsTextFile("data/out2/result.txt")
-    df.map(x => (new Text(x.get(0).toString), new Text(x.mkString("\t")))).saveAsSequenceFile(args(1), Some(classOf[SnappyCodec]))
+    val hadoopConf = new org.apache.hadoop.conf.Configuration()
+    val hdfs = org.apache.hadoop.fs.FileSystem.get(hadoopConf)
+    try {
+      hdfs.delete(new org.apache.hadoop.fs.Path(args(1)), true)
+    } catch {
+      case _: Throwable => {}
+    }
+    df.distinct.repartition(1).saveAsParquetFile(args(1) + "/parquet")
+    df.distinct.rdd.map(x => x.mkString("\t")).repartition(1).saveAsTextFile(args(1) + "/text")
+    df.distinct.map(x => (new Text(x.get(0).toString), new Text(x.mkString("\t")))).repartition(1).saveAsSequenceFile(args(1) + "/sequence", Some(classOf[SnappyCodec]))
 
     println(df.collect().foreach(println))
 
