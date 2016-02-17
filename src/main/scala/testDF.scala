@@ -1,3 +1,5 @@
+import org.apache.hadoop.io.Text
+import org.apache.hadoop.io.compress.SnappyCodec
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.types.{StringType, StructField, StructType}
 import org.apache.spark.sql.{Row, SQLContext}
@@ -16,7 +18,7 @@ object testDF {
     val sqlContext = new SQLContext(sc)
 
     //val input:JavaRDD[Row] = sc.textFile("data/in/test1.csv").map[Row](x => Row(x.split(",")))
-    val input: RDD[Row] = sc.textFile("data/in/*.csv").map(_.split(",")).map(x => Row(x(0), x(1), x(2)))
+    val input: RDD[Row] = sc.textFile(args(0)).map(_.split(",")).map(x => Row(x(0), x(1), x(2)))
     println(input.count())
     println(input.collect().apply(1).get(1))
     //val columns = List[String]("id","name","desc").asJava
@@ -26,7 +28,7 @@ object testDF {
 
     //df.saveAsParquetFile("data/out/result.parquet")
     //df.rdd.saveAsTextFile("data/out2/result.txt")
-    //df.toJSON.saveAsSeq
+    df.map(x => (new Text(x.get(0).toString), new Text(x.mkString("\t")))).saveAsSequenceFile(args(1), Some(classOf[SnappyCodec]))
 
     println(df.collect().foreach(println))
 
